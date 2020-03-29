@@ -129,12 +129,12 @@ class App extends Component {
     // initiates the creation of SDP
     this.pc.createOffer({ offerToReceiveVideo: 1 })
       .then(sdp => {
-        // console.log(JSON.stringify(sdp))
+        console.log(JSON.stringify(sdp))
 
-        // set offer sdp as local description
+        /* // set offer sdp as local description
         this.pc.setLocalDescription(sdp)
 
-        this.sendToPeer('offerOrAnswer', sdp)
+        this.sendToPeer('offerOrAnswer', sdp) */
     })
   }
 
@@ -144,12 +144,12 @@ class App extends Component {
     console.log('Answer')
     this.pc.createAnswer({ offerToReceiveVideo: 1 })
       .then(sdp => {
-        // console.log(JSON.stringify(sdp))
+        console.log(JSON.stringify(sdp))
 
-        // set answer sdp as local description
+        /* // set answer sdp as local description
         this.pc.setLocalDescription(sdp)
 
-        this.sendToPeer('offerOrAnswer', sdp)
+        this.sendToPeer('offerOrAnswer', sdp) */
     })
   }
 
